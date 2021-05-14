@@ -12,9 +12,9 @@ jobs:
     - name: download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/rajnikantmahato/editing-rdp/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/rajnikantmahato/editing-rdp/main/wallpaper.png -OutFile wallpaper.bmp
-        Invoke-WebRequest https://raw.githubusercontent.com/rajnikantmahato/editing-rdp/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/samay826/Samay_Latest_RDp/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/samay826/Samay_Latest_RDp/main/wallpaper.png -OutFile wallpaper.bmp
+        Invoke-WebRequest https://raw.githubusercontent.com/samay826/Samay_Latest_RDp/main/wallpaper.bat -OutFile wallpaper.bat
     - name: extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect to  Ngrok.
@@ -34,5 +34,5 @@ jobs:
       run: cmd /c start.bat
     - name: Cybokhackers
       run: | 
-        Invoke-WebRequest https://raw.githubusercontent.com/rajnikantmahato/editing-rdp/main/loop.ps1 -OutFile loop.ps1
+        Invoke-WebRequest https://raw.githubusercontent.com/samay826/Samay_Latest_RDp/main/loop.ps1 -OutFile loop.ps1
         ./loop.ps1
